@@ -8,7 +8,7 @@ public class Main {
         mtsyri.printInfo();
         warAndPeace.printInfo();
 
-        mtsyri.setPublishingYear(2009);
+        mtsyri.setPublishingYear(2023);
         mtsyri.printInfo();
     }
 }
