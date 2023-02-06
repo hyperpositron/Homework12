@@ -1,7 +1,7 @@
 public class Book {
-    private String title;
+    private final String title;
     private int publishingYear;
-    private Author author;
+    private final Author author;
 
     public Book(String title, int publishingYear, Author author) {
         this.title = title;
@@ -13,9 +13,6 @@ public class Book {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
     public int getPublishingYear() {
         return publishingYear;
@@ -29,7 +26,9 @@ public class Book {
         return author;
     }
 
-    public void setAuthor(Author author) {
-        this.author = author;
+
+    public void printInfo() {
+        System.out.println("Название книги: " + getTitle() + " Год издания: " + getPublishingYear() + " , " +
+                "Автор: " + getAuthor().getName() + " " + getAuthor().getSurname());
     }
 }

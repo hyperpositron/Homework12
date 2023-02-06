@@ -5,7 +5,10 @@ public class Main {
 
         Book mtsyri = new Book("Мцыри", 1839, lermontov);
         Book warAndPeace = new Book("Война и мир", 1867, tolstoy);
-        System.out.println(mtsyri);
-        System.out.println(warAndPeace);
+        mtsyri.printInfo();
+        warAndPeace.printInfo();
+
+        mtsyri.setPublishingYear(2009);
+        mtsyri.printInfo();
     }
 }
